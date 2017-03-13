@@ -1,5 +1,5 @@
 # Bachelors Thesis
-This repository is dedicated to files connected to my Bachelors Thesis.
+This repository is designed for files associated with my bachelor thesis.
 
 If you would like to report some issue or an idea for improvement, you are very welcome to contact me.
 
