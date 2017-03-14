@@ -8,8 +8,8 @@
     1. [X] Rozšíření pro server a databázi
     1. [X] Umělá inteligence, Q-Learning
 1. Proč je to důležité
-    1. [ ] Jednoduší vývoj, přímo spajtý s námi poskytnutou databází uživatelů - představa hraní her jako aplikace s pluginy
-    1. [ ] Zpřístupnění méně známých her více hráčům a doplnění hráčské komunity o umělé inteligence
+    1. [X] Jednoduší vývoj, přímo spajtý s námi poskytnutou databází uživatelů - představa hraní her jako aplikace s pluginy
+    1. [X] Zpřístupnění méně známých her více hráčům a doplnění hráčské komunity o umělé inteligence
 1. Volba metody
     1. [ ] Diskrétní prostor - tabulková reprezentace (nezměním to přecijen ještě? Například na nějaké jednoduché spojité rozdělení prostoru na sekce)
     1. [ ] Server - mediator - úspora času a místa
@@ -29,6 +29,9 @@ Vzhledem k nedostatkům ostatních knihoven jsme se rozhodli naimplementovat kni
 
 Pro ověření univerzálnosti reprezentace her naprogramujeme aplikaci schopnou spuštění libovolné klasické karetní hry. Její funkčnost ověříme pomocí ukázkových her. Zároveň s tím naprogramujeme databázi a server za účelem propojení uživtelů a možnosti hry více hráčů. V rámci serveru bude implementovaný i inteligentní žebříček hráčů pro každou oficiální hru (oficiální hry budou nabízeny distributorem klient-server aplikace).
 
-Nakonec vytvoříme jednoduché pravidlové umělé inteligence pro ukázkové hry a umělou inteligenci schopnou naučit se libovolnou z těchto her. K tvorbě samoučící se umělé inteligence využijeme techonologii Q-Learning.
+Nakonec vytvoříme jednoduché pravidlové umělé inteligence pro ukázkové hry a umělou inteligenci schopnou naučit se libovolnou z těchto her. K tvorbě samoučící se umělé inteligence využijeme techonologii Q-Learning. Tato samoučící se umělá inteligence bude vytrénována na hrách proti pravidlovým umělým inteligencím a měla by být schopna je ve většině případů porazit.
 
 ###### Proč je to důležité?
+Náš koncept karetních her by měl ulehčit práci programátorům karetních her. Díky návrhu aplikace a serveru by měl zjednodušit dristribuci her mezi uživateli. Hráčům bude možno nabídnout karetní hry jako doplňující soubory naprogramované aplikace. Také by měl zpřístupnit málo známé karetní hry větší hráčské komunitě a umožnit tak uživatelům jejich hraní i při nedostatku dalších hráčů. A to hlavně za pomoci umělých inteligencí.
+
+###### Volba metody
