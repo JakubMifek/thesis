@@ -6,7 +6,7 @@
     1. [X] Knihovna pro návrh klasických karetních her
     1. [X] Aplikace pro spouštění
     1. [X] Rozšíření pro server a databázi
-    1. [ ] Umělá inteligence, Q-Learning
+    1. [X] Umělá inteligence, Q-Learning
 1. Proč je to důležité
     1. [ ] Jednoduší vývoj, přímo spajtý s námi poskytnutou databází uživatelů - představa hraní her jako aplikace s pluginy
     1. [ ] Zpřístupnění méně známých her více hráčům a doplnění hráčské komunity o umělé inteligence
@@ -25,4 +25,10 @@ Jednou z hlavních částí naší práce je návrh knihovny pro tvorbu klasick�
 Pokusy o reprezentaci karetních her již samozřejmě proběhly ve větším množství. Existují knihovny pro podporu reprezentace karet a balíčků karet. Ale to je nedostačující. Klasické karetní hry mají mnohem více společných rysů. Existují knihovny pro podporu stolních her, avšak ty jsou moc obecné. Uživatel si musí dodefinovat velké množství charakteristik, které se často pro karetní hry opakují. Avšak najdou se i knihovny, které spojují oboje charakteristiky a jsou poměrně blízko k nami požadovanému výsledku. Avšak ani jeden z těchto návrhů nedokázal vyřešit problém reprezentace stolu, licitací, her po síti, a nebo opatření proti podvádění.
 
 ###### Cíl práce
-Vzhledem k nedostatkům ostatních knihoven jsme se rozhodli naimplementovat knihovnu vlastní. Ta bude schopna jednoduše reprezentovat libovolnou klasickou hru a to jak její logickou strukturu, tak grafický vzhled hry. Umožní tak jednoduchou distribuci karetních her mezi uživateli. Dále pro ověření univerzálnosti knihovny naimplementujeme pět typově rozdílných her za pomoci naší knihovny. Konkrétně Mariáš (týmová hra s licitací), Texas Hold'Em Poker (hra založená na principu peněz a přetvářky) a Lóru (Kladenská karetní hra, která je složena celkem ze sedmi podher, obsahující mimo jiné klasické hry typu prší, vykládací hru a hru, jejíž pravidla jsou určeny až za průběhu). Dále pro ověření univerzálnosti reprezentace naprogramujeme aplikaci schopnou spuštění libovolné klasické karetní hry. Zároveň s tím naprogramujeme databázi a server za účelem propojení uživtelů a možnosti hry online. V rámci serveru bude implementovaný i žebříček hráčů pro každou oficiální hru (oficiální hry budou nabízeny distributorem klient-server aplikace). Dále vytvoříme pravidlové umělé inteligence pro ukázkové hry a umělou inteligenci schopnou naučit se libovolnou z těchto her. K tvorbě samoučící se umělé inteligence využijeme techonologii Q-Learning.
+Vzhledem k nedostatkům ostatních knihoven jsme se rozhodli naimplementovat knihovnu vlastní. Ta bude schopna jednoduše reprezentovat libovolnou klasickou hru a to jak její logickou strukturu, tak grafický vzhled hry. Dále pro ověření univerzálnosti knihovny naimplementujeme pět typově rozdílných her za pomoci naší knihovny. Konkrétně hry Mariáš (týmová hra s licitací), Texas Hold'Em Poker (hra založená na principu peněz a přetvářky) a Lóru (Kladenská karetní hra, která je složena celkem ze sedmi podher, obsahující mimo jiné klasické hry typu prší, vykládací hru a hru, jejíž pravidla jsou určeny až za průběhu).
+
+Pro ověření univerzálnosti reprezentace her naprogramujeme aplikaci schopnou spuštění libovolné klasické karetní hry. Její funkčnost ověříme pomocí ukázkových her. Zároveň s tím naprogramujeme databázi a server za účelem propojení uživtelů a možnosti hry více hráčů. V rámci serveru bude implementovaný i inteligentní žebříček hráčů pro každou oficiální hru (oficiální hry budou nabízeny distributorem klient-server aplikace).
+
+Nakonec vytvoříme jednoduché pravidlové umělé inteligence pro ukázkové hry a umělou inteligenci schopnou naučit se libovolnou z těchto her. K tvorbě samoučící se umělé inteligence využijeme techonologii Q-Learning.
+
+###### Proč je to důležité?
