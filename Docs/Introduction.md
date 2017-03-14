@@ -19,4 +19,7 @@
     1. Q-Learning. Proč Q a vztah k ostatním umělým inteligencím a vztah k naším cílům (2.4.)
 
 ___
-Veškeré karetní hry 
+###### Co je známo?
+Jednou z hlavních částí naší práce je návrh knihovny pro tvorbu klasických karetních her. Klasické karetní hry mají spoustu společných vlastností, které v naší knihovně můžeme reprezentovat. Odehrávají se v diskrétním prostoru (karetní stůl), mají pouze omezený počet předem známých karet, omezený počet hráčů. Každý klasický karetní stůl je složen ze základních elementů jako například karetní míst (cardspot). Každá klasická karta má svou hodnotu a barvu. Každá klasická karetní hra je složena z dílčích fází. Každá fáze může ovlivnit jak vypadá karetní stůl nebo například skóre hráčů. A také ji je možno spustit a zastavit. Hlavní charakteristikou fází je, že na jejich žádost hráč vybírá možnost z množiny stavů, pomocí které určí další průběh hry. Typicky se jedná o volbu karty, přetažení karty nebo o licitační hlášku. Každý hráč klasické karetní hry vlastní svůj profil, má přiřazenou probíhající karetní hru, své balíčky karet a je schopen na žádost hry zvolit akci, kterou chce provést.
+
+Knihovny pro reprezentaci karet, stolních her, karetních her s nedostatečnou strukturou ~ umožním ti spustit hru která je stolní a bude mít karty.. ale kde jsou karty a tak, vps celé to okénko si nadefinuj sám pořádně. Stejně tak ochranu před podváděním, atp.
