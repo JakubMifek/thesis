@@ -24,6 +24,8 @@ Jednou z hlavních částí naší práce je návrh knihovny pro tvorbu klasick�
 
 Pokusy o reprezentaci karetních her již samozřejmě proběhly ve větším množství. Existují knihovny pro podporu reprezentace karet a balíčků karet. Ale to je nedostačující. CCGs mají mnohem více společných rysů. Existují knihovny pro podporu stolních her, avšak ty jsou moc obecné. Uživatel si musí dodefinovat velké množství charakteristik, které se často pro CCGs opakují. Avšak najdou se i knihovny, které spojují oboje charakteristiky a jsou poměrně blízko k nami požadovanému výsledku. Avšak ani jeden z těchto návrhů nedokázal vyřešit problém reprezentace stolu, licitací, her po síti, a nebo opatření proti podvádění.
 
+> Možná bych mohl věnovat odstavec využití umělých inteligencí v karetních hrách
+
 ###### Cíl práce
 Vzhledem k nedostatkům ostatních knihoven jsme se rozhodli naimplementovat knihovnu vlastní. Ta bude schopna jednoduše reprezentovat libovolnou CCG a to jak její logickou strukturu, tak grafický vzhled hry. Dále pro ověření univerzálnosti knihovny naimplementujeme pět typově rozdílných her za pomoci naší knihovny. Konkrétně hry Mariáš (týmová hra s licitací), Texas Hold'Em Poker (hra založená na principu peněz a přetvářky) a Lóru (Kladenská karetní hra, která je složena celkem ze sedmi podher, obsahující mimo jiné klasické hry typu prší, vykládací hru a hru, jejíž pravidla jsou určeny až za průběhu).
 
@@ -41,3 +43,6 @@ Aplikaci napíšeme v jazyce C# za pomocí MonoGame, které umožňuje zjednodu�
 Pro komunikaci přes server jsme se rozhodli pro metodu 'Mediator'. Server slouží pouze pro zápis do databáze, nebo přeposlání událostí hráče k ostatním hráčům. Vlastní hra běží v aplikaci každého z hráčů a nezatěžuje tak server.  
 
 K implementaci AI použijeme metodu Q-Learning. Q-Learning používá funkci stavů a akcí. Poté, co spočítá hodnoty ocenění pro jednotlivé stavy a možné akce (pomocí postupného učení), vybere při příchodu do stavu ten nejlépe ohodnocený. V karetních hrách se takový stav skládá z historie akcí a z možností, které je hráč schopen provést. Prostor všech takových možností je příliš velký pro jednoduché prohledávání a počítání a tak je potřeba zvolit aproximační funkci, která zjednoduší volbu reakcí a zmenší stavový prostor.
+
+____
+... Co máme čekat ve zbytku práce... (Dopíši až po zbytku práce, aby to sedělo)
